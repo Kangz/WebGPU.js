@@ -1,0 +1,30 @@
+{
+  "name": "WebGPU.js",
+  "title": "WebGPU.js",
+  "description": "WebGPU implementation on top of WebGL2",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kangz/WebGPU.js"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-contrib-uglify-es": "git+https://github.com/gruntjs/grunt-contrib-uglify.git#harmony",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-eslint": "^20.1.0",
+    "grunt-rollup": "https://github.com/fyrkant/grunt-rollup.git#update-config-options",
+    "jquery": "^3.3.1",
+    "qunit": "^2.5.1",
+    "rollup": "^0.56.5",
+    "sinon": "^4.4.5",
+    "uglify-es": "^3.3.9"
+  },
+  "scripts": {
+    "build": "yarn install && grunt",
+    "start": "grunt watch",
+    "test": "grunt",
+    "precommit": "grunt lint"
+  }
+}
